@@ -5,7 +5,7 @@ These can be used to write to a file, or be inserted into a runtime.
 
 ## Installation
 - `npm -i @dev-team-tool/feature-switches`
-- >=NodeJS 20
+- >= NodeJS 20
 
 ## Usage - converting JSON to properties
 
