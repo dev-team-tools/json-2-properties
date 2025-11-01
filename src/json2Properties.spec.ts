@@ -19,12 +19,22 @@ describe("json2Properties", () => {
       value: 321,
     });
     expect(actual[1]).toStrictEqual({
-      key: "secondKey.anotherKey.actual",
+      key: "secondKey.anotherKey.actualValue",
       value: true,
     });
     expect(actual[2]).toStrictEqual({
-      key: "secondKey.sopmethingElse",
+      key: "secondKey.somethingElse",
       value: "Hello",
     });
+  });
+
+  it("Should throw exception when given an invalid type", () => {
+    const given = {
+      invalidType: undefined,
+    };
+
+    expect(() => {
+      json2Properties(given);
+    }).toThrow(new Error("Invalid type given for parameter"));
   });
 });
