@@ -4,8 +4,8 @@ A library to convert JSON files to .properties style object, and back again.
 These can be used to write to a file, or be inserted into a runtime.
 
 ## Installation
-- `npm -i @dev-team-tool/feature-switches`
-- >= NodeJS 20
+- `npm -i @dev-team-tool/json-2-properties`
+- NodeJS 22+
 
 ## Usage - converting JSON to properties
 
