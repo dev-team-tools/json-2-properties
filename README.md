@@ -1,5 +1,7 @@
 # json-2-properties
-A library to convert JSON files to .properties files, and back again.
+A library to convert JSON files to .properties style object, and back again.
+
+These can be used to write to a file, or be inserted into a runtime.
 
 ## Installation
 - `npm -i @dev-team-tool/feature-switches`
@@ -70,7 +72,7 @@ Would become:
 When converted in code, each of these would become:
 ```javascript
 const givenProperties: Property[] = getProperties() // maybe read from a file, but converted into Property type
-const converted = properties2Json<convertedType>(givenProperties); // you can provide a TypeScript type - recommend to use a typeguard once converted
+const converted = properties2Json<YourType>(givenProperties); // Providing a type doesn't do a lot, so ensure you use a TypeGuard!
 
 console.log(converted.firstKey) // would print 321
 console.log(converted.secondKey.anotherKey.actualValue) // would produce true
