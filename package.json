@@ -1,6 +1,6 @@
 {
   "name": "@dev-team-tool/json-2-properties",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Library for converting json to properties, and back again",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsup",
     "test": "jest",
-    "publish": "npm publish --access public"
+    "publish": "npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -30,9 +30,9 @@
   "author": "Harry Winser",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/dev-team-tools/feature-switches-node/issues"
+    "url": "https://github.com/dev-team-tools/json-2-properties/issues"
   },
-  "homepage": "https://github.com/dev-team-tools/feature-switches-node#readme",
+  "homepage": "https://github.com/dev-team-tools/json-2-properties#readme",
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.0.5",
